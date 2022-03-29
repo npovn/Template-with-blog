@@ -1,2 +1,2 @@
-# F/M Vision
-A website for F/M Vision project.
+# Latibule
+A website for Latibule of the heart project.
