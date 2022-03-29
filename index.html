@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Template</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </script>
+    <script> 
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id = "header"></div>
+    <div class="container">
+        <div class="home">
+            <div class="backgroundcover"></div>
+            <img src="/Assets/Images/HomeBackground.jpg" class="parallax" alt="Furniture">
+            <div class="title">
+                <h1 class="font1">F/M</h1><h1>Vision</h1>
+                <p>Because you are a <b>treasure</b></p>
+                <div class="BtnContainer">
+                    <a href="#"><button><span></span>Let's go</button></a>
+                    <a href="#"><button><span></span>More</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="content"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

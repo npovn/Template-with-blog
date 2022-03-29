@@ -1,0 +1,257 @@
+@font-face {
+    font-family: Iciel;
+    src: url(/Assets/Fonts/Iciel.ttf);
+}
+
+@font-face {
+    font-family: Briko;
+    src: url(/Assets/Fonts/Briko.ttf);
+}
+
+@font-face {
+    font-family: SVN-Aleo;
+    src: url(/Assets/Fonts/SVN-Aleo.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    src: url(/Assets/Fonts/Spectral.ttf);
+}
+
+@font-face {
+    font-family: NorthLand;
+    src: url(/Assets/Fonts/NorthLand.ttf);
+}
+
+@font-face {
+    font-family: Aquus;
+    src: url(/Assets/Fonts/Aquus.ttf);
+}
+
+@font-face {
+    font-family: Yeseva;
+    src: url(/Assets/Fonts/Yeseva.ttf);
+}
+
+@font-face {
+    font-family: Sympathique;
+    src: url(/Assets/Fonts/Sympathique.ttf);
+}
+
+@font-face {
+    font-family: Dekar;
+    src: url(/Assets/Fonts/Dekar.ttf);
+}
+
+@font-face {
+    font-family: Hullist;
+    src: url(/Assets/Fonts/Hullist.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    padding-bottom:100px;
+}
+
+.home{
+    width: 100%; 
+    height: 100vh;
+    transform: translateZ(0);
+    overflow: hidden;
+    position: absolute;
+    background: linear-gradient(#F1A3D2, #ABD9EF);
+}
+
+.backgroundcover{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), 
+    rgba(255, 143, 143, 0.4));
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.parallax{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Title */
+.title{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(58, 28, 51);
+    margin-left: 20px;
+}
+
+@keyframes Header_Transition {
+    0%{
+        transform: translateY(40px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title h1{
+    font-family: Dekar;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-weight: lighter;
+    display: inline-block;
+
+    animation: Header_Transition 0.6s ease-out;
+}
+
+.title h1.font1{
+    font-family: Dekar;
+    font-weight: bolder;
+    margin: 0 2.5vw;
+}
+
+@keyframes Description_Transition {
+    0%{
+        transform: translateY(60px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title p{
+    font-family: Iciel;
+    margin: 0 2.5vw;
+    padding: 0;
+    font-weight: lighter;
+
+    animation: Description_Transition 1s ease-out;
+}
+
+b{
+    font-family: Hullist;
+    color: rgb(255, 100, 100);
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+@keyframes Button_Transition {
+    0%{
+        transform: translateY(100px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title div a button{
+    color: rgb(2, 66, 8);
+    font-size: 1.5rem;
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 0 30px;
+    padding: 0;
+    border: 3px solid rgb(255, 96, 96);
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    font-family: Iciel;
+    text-transform: uppercase;
+
+    animation: Button_Transition 1s ease-out;
+}
+/* Format span hiệu ứng của button */
+.BtnContainer button span{
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgb(255, 96, 96);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.title div a button:hover{
+    border: transparent;
+    color: rgb(15, 15, 15);
+}
+
+.BtnContainer button:hover span{
+    width: 100%;
+    border: 3px solid rgb(255, 106, 106);
+}
+
+/* Khi media lớn như pc */
+@media screen and (min-width: 801px) {
+    .title h1{
+        font-size: 120px;
+    }
+    .title p{
+        font-size: 30px;
+        margin-bottom: 17px;
+    }
+    .BtnContainer{
+        display: flex;
+        justify-content: left;
+    }
+  }
+/* Chỉnh cỡ navbar cho phù hợp  */
+  @media screen and (max-width: 1080px) {
+    .title h1{
+        font-size: 100px;
+    }
+  }
+
+/* Khi media nhỏ cỡ mobile */
+  @media screen and (max-width: 800px) {
+    .title h1{
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+    .title p{
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+    .BtnContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Logo{
+        width: 95px;
+        height: auto;
+    }
+  }
+
+/* Format cái div content */
+.content{
+    transform: translateY(100vh);
+    min-height: 100vh;
+    z-index: 1;
+}
