@@ -60,6 +60,14 @@ body{
     justify-content: space-between;
     z-index: 1;
 }
+.black{
+    background-color: rgb(41, 40, 40);
+    width: 100vw;
+    height: 30px;
+}
+.black a .Logo{
+    transform: translateX(60px);
+}
 .logo{
     height: 13vh;
 }
@@ -75,6 +83,12 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(41, 40, 40);
+}
+.black ul.PC_navbar li a{
+    color: white;
+}
+ul.PC_navbar{
+    transform: translateX(-60px);
 }
 
 .navbar ul.PC_navbar li::after{
@@ -226,6 +240,9 @@ body{
     }
     .navbar ul.PC_navbar li a:hover{
         color: rgb(93, 162, 219);
+    }
+    .black ul.PC_navbar li a:hover{
+        color: rgb(167, 212, 247);
     }
     .burger_menu{
         display: none;
