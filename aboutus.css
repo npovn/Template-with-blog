@@ -1,26 +1,31 @@
 @font-face {
     font-family: Iciel;
-    src: url(../Asset/Fonts/Iciel.ttf);
+    src: url(/Asset/Fonts/Iciel.ttf);
 }
 
 @font-face {
     font-family: Briko;
-    src: url(../Asset/Fonts/Briko.ttf);
+    src: url(/Asset/Fonts/Briko.ttf);
 }
 
 @font-face {
     font-family: SVN-Aleo;
-    src: url(../Asset/Fonts/SVN-Aleo.ttf);
+    src: url(/Asset/Fonts/SVN-Aleo.ttf);
 }
 
 @font-face {
     font-family: Spectral;
-    src: url(../Asset/Fonts/Spectral.ttf);
+    src: url(/Asset/Fonts/Spectral.ttf);
 }
 
 @font-face {
     font-family: NorthLand;
-    src: url(../Asset/Fonts/NorthLand.ttf);
+    src: url(/Asset/Fonts/NorthLand.ttf);
+}
+
+@font-face {
+    font-family: Vollkorn;
+    src: url(../Assets/Fonts/Vollkorn.ttf);
 }
 
 *{
@@ -185,22 +190,33 @@
 }
 
 .title2{
-    transform: translateY(25vh);
+    position: absolute;
+    transform: translateY(23vh);
     margin-left: 25px;
+    text-align: right;
 }
 
-.mission p{
-    width: 700px;
+.title2 p{
+    width: 650px;
     position: absolute;
+    margin-top: 30px;
+    font-family: Vollkorn;
+}
+
+.title2 h1{
+    font-family: Iciel;
+    width: 650px;
+    padding-bottom: 20px;
 }
 
 .title2 h1::after{
     content: "";
     align-items: center;
-    left: 0;
-    bottom: -8px;
-    height: 3.5px;
-    width: 50px;
-    background-color: red;
+    left: 549px;
+    bottom: 7px;
+    height: 3.3px;
+    border-radius: 2px;
+    width: 100px;
+    background-color: rgb(255, 96, 96);
     position: absolute;
 }
