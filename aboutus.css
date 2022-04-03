@@ -159,8 +159,48 @@
     }
   }
 
-/* Format cái div content */
-.content{
-    transform: translateY(100vh);
-    min-height: 100vh;
+/* Mission */
+.mission{
+    transform: translateY(70vh);
+    min-height: 70vh;
+    position: relative;
+}
+
+.mission img{
+    width: 380px;
+    margin-left: 770px;
+    margin-top: 35px;
+    position: absolute;
+}
+
+.mission .deco{
+    content: "";
+    align-items: center;
+    width: 322px;
+    height: 322px;
+    background-color: rgb(255, 96, 96);
+    margin-left: 845px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.title2{
+    transform: translateY(25vh);
+    margin-left: 25px;
+}
+
+.mission p{
+    width: 700px;
+    position: absolute;
+}
+
+.title2 h1::after{
+    content: "";
+    align-items: center;
+    left: 0;
+    bottom: -8px;
+    height: 3.5px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
 }
