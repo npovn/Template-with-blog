@@ -1,31 +1,31 @@
 @font-face {
     font-family: Iciel;
-    src: url(/Asset/Fonts/Iciel.ttf);
+    src: url(Asset/Fonts/Iciel.ttf);
 }
 
 @font-face {
     font-family: Briko;
-    src: url(/Asset/Fonts/Briko.ttf);
+    src: url(Asset/Fonts/Briko.ttf);
 }
 
 @font-face {
     font-family: SVN-Aleo;
-    src: url(/Asset/Fonts/SVN-Aleo.ttf);
+    src: url(Asset/Fonts/SVN-Aleo.ttf);
 }
 
 @font-face {
     font-family: Spectral;
-    src: url(/Asset/Fonts/Spectral.ttf);
+    src: url(Asset/Fonts/Spectral.ttf);
 }
 
 @font-face {
     font-family: NorthLand;
-    src: url(/Asset/Fonts/NorthLand.ttf);
+    src: url(Asset/Fonts/NorthLand.ttf);
 }
 
 @font-face {
     font-family: Vollkorn;
-    src: url(../Assets/Fonts/Vollkorn.ttf);
+    src: url(Assets/Fonts/Vollkorn.ttf);
 }
 
 *{
@@ -334,7 +334,20 @@
 }
 
 /* Goal */
+.goal{
+    height: 70vh;
+    margin-top: 150px;
+}
+.goal > h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
 .goal_container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub_goal img{
+    align-self: center;
 }
