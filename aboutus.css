@@ -40,10 +40,10 @@
 
 .home{
     width: 100%; 
-    height: 70vh;
+    height: 90vh;
     transform: translateZ(0);
     overflow: hidden;
-    position: absolute;
+    position: relative;
 }
 
 .backgroundcover{
@@ -166,38 +166,58 @@
 
 /* Mission */
 .mission{
-    transform: translateY(70vh);
-    min-height: 70vh;
+    height: 70vh;
     position: relative;
 }
 
-.mission img{
-    width: 380px;
-    margin-left: 770px;
-    margin-top: 35px;
+.mission::after{
+    content: "";
+    align-items: center;
+    left: 0;
+    bottom: -70px;
+    height: 3px;
+    border-radius: 2px;
+    width: 35vw;
+
+    /* (100 - width)/2 */
+    transform: translateX(32.5vw);
+
+    background-color: rgba(69, 65, 65, 0.2);
     position: absolute;
+}
+
+.mission img{
+    width: 29.8vw;
+    position: relative;
 }
 
 .mission .deco{
     content: "";
     align-items: center;
-    width: 322px;
-    height: 322px;
+    width: 25.4vw;
+    height: 25.4vw;
+    left: 72px;
+    bottom: 18px;
     background-color: rgb(255, 96, 96);
-    margin-left: 845px;
-    margin-top: 20px;
     position: absolute;
+}
+
+.img_container{
+    position: absolute;
+    margin-left: 60vw;
 }
 
 .title2{
-    position: absolute;
+    position: ab;
     transform: translateY(23vh);
-    margin-left: 25px;
+    margin-left: 3vw;
+    margin-right: 3vw;
     text-align: right;
+    padding: 10px;
+    width: 50vw;
 }
 
 .title2 p{
-    width: 650px;
     position: absolute;
     margin-top: 30px;
     font-family: Vollkorn;
@@ -205,18 +225,29 @@
 
 .title2 h1{
     font-family: Iciel;
-    width: 650px;
     padding-bottom: 20px;
 }
 
 .title2 h1::after{
     content: "";
     align-items: center;
-    left: 549px;
-    bottom: 7px;
+    float: right;
+    right: 10px;
+    bottom: 20px;
     height: 3.3px;
     border-radius: 2px;
     width: 100px;
     background-color: rgb(255, 96, 96);
     position: absolute;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.reveal.active{
+    transform: translateY(50px);
+    opacity: 1;
 }

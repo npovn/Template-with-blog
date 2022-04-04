@@ -27,15 +27,49 @@
             </div>
         </div>
 
-        <div class="mission">
+        <div class="mission reveal">
             <div class="title2">
                 <h1>Sứ mệnh</h1>
                 <p>LOTH ra đời với sứ mệnh giúp các bạn trẻ phát triển kĩ năng sống và vận dụng các kiến thức đã được học một cách thiết thực hơn trong cuộc sống.</p>
             </div>
-            <div class="deco"></div>
-            <img src="/Assets/Images/Aboutus2.jpg" alt="Study2">
+            <div class="img_container">
+                <div class="deco"></div>
+                <img src="/Assets/Images/Aboutus2.jpg" alt="Study2">
+            </div>
+        </div>
+        <div class="mission reveal">
+            <div class="title2">
+                <h1>Sứ mệnh</h1>
+                <p>LOTH ra đời với sứ mệnh giúp các bạn trẻ phát triển kĩ năng sống và vận dụng các kiến thức đã được học một cách thiết thực hơn trong cuộc sống.</p>
+            </div>
+            <div class="img_container">
+                <div class="deco"></div>
+                <img src="/Assets/Images/Aboutus2.jpg" alt="Study2">
+            </div>
         </div>
     </div>  
     <script src="main.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            // else{
+            //   reveals[i].classList.remove('active');
+            // }
+          }
+        }
+    </script>
 </body>
 </html>
