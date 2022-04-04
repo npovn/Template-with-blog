@@ -342,6 +342,11 @@
     text-align: center;
     margin-bottom: 50px;
 }
+
+.goal p{
+    width: 20vw;
+}
+
 .goal_container{
     display: flex;
     flex-direction: row;
@@ -349,5 +354,5 @@
     align-items: center;
 }
 .sub_goal img{
-    align-self: center;
+    transform: translateX(50%);
 }
