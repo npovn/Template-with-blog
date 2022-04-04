@@ -211,10 +211,10 @@ b{
 /* Khi media lớn như pc */
 @media screen and (min-width: 801px) {
     .title h1{
-        font-size: 70px;
+        font-size: 90px;
     }
     .title p{
-        font-size: 30px;
+        font-size: 50px;
         margin-bottom: 17px;
     }
     .BtnContainer{
