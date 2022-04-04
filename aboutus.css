@@ -39,7 +39,7 @@
 }
 
 .home{
-    width: 100%; 
+    width: 100vw; 
     height: 90vh;
     transform: translateZ(0);
     overflow: hidden;
@@ -164,6 +164,9 @@
     }
   }
 
+.title2{
+    color: rgb(73, 66, 66);
+}
 /* Mission */
 .mission{
     height: 70vh;
@@ -202,13 +205,13 @@
     position: absolute;
 }
 
-.img_container{
+.mission .img_container{
     position: absolute;
     margin-left: 60vw;
 }
 
-.title2{
-    position: ab;
+.mission .title2{
+    position: absolute;
     transform: translateY(23vh);
     margin-left: 3vw;
     margin-right: 3vw;
@@ -217,22 +220,100 @@
     width: 50vw;
 }
 
-.title2 p{
+.mission .title2 p{
     position: absolute;
     margin-top: 30px;
     font-family: Vollkorn;
 }
 
-.title2 h1{
+.mission .title2 h1{
     font-family: Iciel;
     padding-bottom: 20px;
 }
 
-.title2 h1::after{
+.mission .title2 h1::after{
     content: "";
     align-items: center;
     float: right;
     right: 10px;
+    bottom: 20px;
+    height: 3.3px;
+    border-radius: 2px;
+    width: 100px;
+    background-color: rgb(255, 96, 96);
+    position: absolute;
+}
+
+/* Vision */
+.vision{
+    height: 70vh;
+    position: relative;
+    margin-top: 100px;
+}
+
+.vision::after{
+    content: "";
+    align-items: center;
+    left: 0;
+    bottom: -70px;
+    height: 3px;
+    border-radius: 2px;
+    width: 35vw;
+
+    /* (100 - width)/2 */
+    transform: translateX(32.5vw);
+
+    background-color: rgba(69, 65, 65, 0.2);
+    position: absolute;
+}
+
+.vision img{
+    width: 29.8vw;
+    position: relative;
+}
+
+.vision .deco{
+    content: "";
+    align-items: center;
+    width: 25.4vw;
+    height: 25.4vw;
+    right: 72px;
+    bottom: 22px;
+    background-color: rgb(255, 96, 96);
+    position: absolute;
+}
+
+.vision .img_container{
+    position: absolute;
+    margin-left: 10vw;
+}
+
+.vision .title2{
+    position: ab;
+    transform: translateY(23vh);
+    margin-right: 3vw;
+    margin-left: 45vw;
+    text-align: left;
+    padding: 10px;
+    width: 50vw;
+}
+
+.vision .title2 p{
+    position: absolute;
+    margin-top: 30px;
+    font-family: Vollkorn;
+}
+
+.vision .title2 h1{
+    font-family: Iciel;
+    padding-bottom: 20px;
+}
+
+.vision .title2 h1::after{
+    content: "";
+    align-items: center;
+    float: left;
+    left: 13px;
     bottom: 20px;
     height: 3.3px;
     border-radius: 2px;
@@ -248,6 +329,6 @@
     transition: 1s all ease-in-out;
 }
 .reveal.active{
-    transform: translateY(50px);
+    transform: translateY(40px);
     opacity: 1;
 }

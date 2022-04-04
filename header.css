@@ -52,20 +52,28 @@ body{
 /* Navbar */
 .navbar{
     position: absolute;
-    width: 80%;
+    width: 100vw;
+    height: 30px;
     margin: auto;
     padding: 35px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1;
+
+    animation: Navbar_Transition 0.6s ease-in-out;
 }
 .black{
     background-color: rgb(41, 40, 40);
     width: 100vw;
     height: 30px;
+
+    animation: Navbar_Transition 0.6s ease-in-out;
 }
 .black a .Logo{
+    transform: translateX(60px);
+}
+.navbar a .Logo{
     transform: translateX(60px);
 }
 .logo{
@@ -198,13 +206,15 @@ ul.PC_navbar{
     color: rgb(164, 223, 250);
 }
 
-@keyframes Header_Transition {
+@keyframes Navbar_Transition {
     0%{
         transform: translateY(40px);
         color: transparent;
+        height: 50px;
     }
     100%{
         transform: translateY(0%);
+        height: 30px;
     }
 }
 @keyframes Description_Transition {
