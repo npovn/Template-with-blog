@@ -601,9 +601,9 @@
     transition: 0.35s all ease-in-out;
 }
 
-/* .sub_value:hover{
-    background-color: rgb(41, 40, 40);
-} */
+.sub_value:hover{
+    transform: translateY(-10px);
+}
 
 .sub_value:hover img{
     width: 90px;
