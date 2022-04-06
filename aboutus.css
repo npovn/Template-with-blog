@@ -426,11 +426,13 @@
     flex-direction: column;
     border: 2px rgb(52, 51, 51) solid;
     border-radius: 5px;
+    cursor: default;
     transition: 0.35s all ease-in-out;
 }
 
 .sub_goal:hover{
     background-color: rgb(41, 40, 40);
+    transform: translateY(-10px);
 }
 
 .sub_goal:hover img{
@@ -567,18 +569,19 @@
 }
 
 .sub_value h1{
+    display: inline-block;
     font-family: Iciel;
     text-align: center;
     margin-bottom: 20px;
-    color: rgb(73, 66, 66);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     transform: translateY(120px);
     transition: 0.4s all ease-in-out;
 }
 
 .sub_value:hover h1{
-    color: rgb(255, 228, 228);
-    transform: translateY(30px);
+    color: rgb(250, 197, 197);
+    transform: translateY(50px);
 }
 
 .sub_value {
@@ -593,22 +596,24 @@
     flex-direction: column;
     border: 2px rgb(52, 51, 51) solid;
     border-radius: 5px;
+    cursor: default;
+    overflow: hidden;
     transition: 0.35s all ease-in-out;
 }
 
-.sub_value:hover{
+/* .sub_value:hover{
     background-color: rgb(41, 40, 40);
-}
+} */
 
 .sub_value:hover img{
     width: 90px;
 }
 
 .sub_value:hover p{
-    display: block;
+    display: inline-block;
     color: white;
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(50px);
 }
 
 .value_container{
@@ -617,6 +622,30 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
+}
+
+.sub_value:nth-child(1){
+    background: linear-gradient(rgba(10, 0, 0, 0.3), 
+    rgba(0, 10, 0, 0.9)), url(Assets/Images/Value1.jpg);
+    background-size: cover;
+}
+
+.sub_value:nth-child(2){
+    background: linear-gradient(rgba(10, 0, 0, 0.3), 
+    rgba(0, 10, 0, 0.9)), url(Assets/Images/Value2.jpg);
+    background-size: cover;
+}
+
+.sub_value:nth-child(3){
+    background: linear-gradient(rgba(10, 0, 0, 0.3), 
+    rgba(0, 10, 0, 0.9)), url(Assets/Images/Value3.jpg);
+    background-size: cover;
+}
+
+.sub_value:nth-child(4){
+    background: linear-gradient(rgba(10, 0, 0, 0.3), 
+    rgba(0, 10, 0, 0.9)), url(Assets/Images/Value4.jpg);
+    background-size: cover;
 }
 
 @media screen and (min-width: 801px) {
