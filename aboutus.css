@@ -212,17 +212,17 @@
 
 .mission .title2{
     position: absolute;
-    transform: translateY(23vh);
+    transform: translateY(15vh);
     margin-left: 3vw;
     margin-right: 3vw;
     text-align: right;
     padding: 10px;
-    width: 50vw;
+    width: 50.5vw;
 }
 
 .mission .title2 p{
     position: absolute;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: Vollkorn;
 }
 
