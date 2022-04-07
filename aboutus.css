@@ -1,31 +1,61 @@
 @font-face {
     font-family: Iciel;
-    src: url(Asset/Fonts/Iciel.ttf);
+    src: url(Assets/Fonts/Iciel.ttf);
 }
 
 @font-face {
     font-family: Briko;
-    src: url(Asset/Fonts/Briko.ttf);
+    src: url(Assets/Fonts/Briko.ttf);
 }
 
 @font-face {
     font-family: SVN-Aleo;
-    src: url(Asset/Fonts/SVN-Aleo.ttf);
+    src: url(Assets/Fonts/SVN-Aleo.ttf);
 }
 
 @font-face {
     font-family: Spectral;
-    src: url(Asset/Fonts/Spectral.ttf);
+    src: url(Assets/Fonts/Spectral.ttf);
 }
 
 @font-face {
     font-family: NorthLand;
-    src: url(Asset/Fonts/NorthLand.ttf);
+    src: url(Assets/Fonts/NorthLand.ttf);
 }
 
 @font-face {
-    font-family: Vollkorn;
-    src: url(Assets/Fonts/Vollkorn.ttf);
+    font-family: Aquus;
+    src: url(Assets/Fonts/Aquus.ttf);
+}
+
+@font-face {
+    font-family: Yeseva;
+    src: url(Assets/Fonts/Yeseva.ttf);
+}
+
+@font-face {
+    font-family: Sympathique;
+    src: url(Assets/Fonts/Sympathique.ttf);
+}
+
+@font-face {
+    font-family: Dekar;
+    src: url(Assets/Fonts/Dekar.ttf);
+}
+
+@font-face {
+    font-family: Hullist;
+    src: url(Assets/Fonts/Hullist.ttf);
+}
+
+@font-face {
+    font-family: Napoli;
+    src: url(Assets/Fonts/Napoli.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Assets/Fonts/Roboto.ttf);
 }
 
 *{
@@ -337,13 +367,14 @@
 .goal{
     height: 70vh;
     margin-top: 180px;
+    position: relative;
 }
 
 .goal::after{
     content: "";
     align-items: center;
     left: 0;
-    bottom: -70px;
+    bottom: -130px;
     height: 3px;
     border-radius: 2px;
     width: 35vw;
@@ -510,7 +541,8 @@
 /* Value */
 .value{
     height: 70vh;
-    margin-top: 180px;
+    margin-top: 250px;
+    position: relative;
 }
 
 .value::after{
@@ -542,6 +574,7 @@
     text-align: center;
     margin-bottom: 120px;
     text-transform: uppercase;
+    position: relative;
 }
 
 .value > h1::after{
@@ -650,12 +683,37 @@
 
 /* Team */
 .team{
-    margin-top: 150px;
+    margin-top: 100px;
     height: 70vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
+    position: relative;
+}
+
+.team::after{
+    content: "";
+    align-items: center;
+    left: 0;
+    bottom: -50px;
+    height: 3px;
+    border-radius: 2px;
+    width: 35vw;
+
+    /* (100 - width)/2 */
+    transform: translateX(32.5vw);
+
+    background-color: rgba(69, 65, 65, 0.2);
+    position: absolute;
+}
+
+.team h1{
+    color:rgb(63, 61, 61);
+}
+
+.team p{
+    color:rgb(68, 64, 64);
 }
 
 .team > img{
@@ -664,17 +722,83 @@
     margin-left: 100px;
 }
 
+.team_container > h1{
+    font-family: Iciel;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.team_container > h1::after{
+    content: "";
+    align-items: center;
+    bottom: -20px;
+    left: 0;
+    height: 3.8px;
+    border-radius: 2px;
+    width: 200px;
+    background-color: rgb(255, 96, 96);
+    position: absolute;
+}
+
 .sub_team{
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+    margin: 15px 0;
+    cursor: default;
 }
 
 .sub_team h1{
-    width: 4vw;
+    width: 5vw;
+    margin-left: 30px;
     text-align: left;
+    font-family: Napoli;
+    z-index: 1;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.35s all ease-in-out;
+}
+
+.sub_team h1::after{
+    content: "";
+    align-items: center;
+    height: 3.5px;
+    width: 0px;
+    bottom: -8px;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 118, 118, 0.529);
+    transition: 0.35s all ease-in-out;
+}
+
+.sub_team:hover h1{
+    transform: scale(1.04);
+}
+
+.sub_team:hover h1::after{
+    width: 50px;
+}
+
+.sub_team p{
+    font-family: Roboto;
+}
+
+.sub_team img{
+    width: 70px;
+}
+
+.sub_team p{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: .35s all ease-in-out;
+    z-index: -1;
+}
+
+.sub_team:hover p{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 @media screen and (min-width: 801px) {
@@ -695,5 +819,11 @@
     }
     .value > h1 {
         font-size: 50px;
+    }
+    .team_container > h1{
+        font-size: 40px;
+    }
+    .team_container p{
+        font-size: 25px;
     }
 }
