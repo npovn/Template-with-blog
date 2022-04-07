@@ -648,6 +648,35 @@
     background-size: cover;
 }
 
+/* Team */
+.team{
+    margin-top: 150px;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.team > img{
+    height: 25vw;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.sub_team{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.sub_team h1{
+    width: 4vw;
+    text-align: left;
+}
+
 @media screen and (min-width: 801px) {
     .mission .title2 h1{
         font-size: 50px;
