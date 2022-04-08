@@ -182,7 +182,7 @@
         function counterReveal(){
             const counters = document.querySelectorAll('.counter');
             const counterups = document.querySelectorAll('.counter-up');
-            const speed = 200; // The lower the slower
+            const speed = 400; // The lower the slower
             
             for(var i = 0; i < counterups.length; i++){
         
@@ -214,10 +214,21 @@
                 };
 
                 updateCount();
-            });
+                });
+            }
+            else{
+                counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    counter.innerText = 0; 
+                };
+
+                updateCount();
+                });
+            }
             }
         }
-}
 
         
     </script>
