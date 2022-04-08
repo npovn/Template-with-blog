@@ -172,28 +172,6 @@
     color: rgb(15, 15, 15);
 }
 
-/* Khi media lớn như pc */
-@media screen and (min-width: 801px) {
-    .title h1{
-        font-size: 200px;
-    }
-    .title p{
-        font-size: 30px;
-        margin-bottom: 17px;
-    }
-  }
-
-/* Khi media nhỏ cỡ mobile */
-  @media screen and (max-width: 800px) {
-    .title h1{
-        font-size: 76px;
-    }
-    .title p{
-        font-size: 10px;
-        margin-bottom: 25px;
-    }
-  }
-
 .title2{
     color: rgb(73, 66, 66);
 }
@@ -753,6 +731,7 @@
 .sub_team h1{
     width: 5vw;
     margin-left: 30px;
+    margin-right: 15px;
     text-align: left;
     font-family: Napoli;
     z-index: 1;
@@ -778,7 +757,7 @@
 }
 
 .sub_team:hover h1::after{
-    width: 50px;
+    width: 4vw;
 }
 
 .sub_team p{
@@ -801,7 +780,21 @@
     opacity: 1;
 }
 
+.team > img{
+    height: 23vw;
+}
+.sub_team img{
+    width: 5vw;
+}
+
 @media screen and (min-width: 801px) {
+    .title h1{
+        font-size: 200px;
+    }
+    .title p{
+        font-size: 30px;
+        margin-bottom: 17px;
+    }
     .mission .title2 h1{
         font-size: 50px;
     }
@@ -825,5 +818,136 @@
     }
     .team_container p{
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .team_container p{
+        font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .mission .title2 h1{
+        font-size: 50px;
+    }
+    .vision .title2 h1{
+        font-size: 50px;
+    }
+    .mission .title2 p{
+        font-size: 20px;
+    }
+    .vision .title2 p{
+        font-size: 20px;
+    }
+    .team_container > h1{
+        font-size: 20px;
+    }
+    .team_container p{
+        font-size: 13.2px;
+    }
+    .sub_team h1{
+        margin-right: 15px;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .mission .title2 h1{
+        font-size: 50px;
+    }
+    .vision .title2 h1{
+        font-size: 50px;
+    }
+    .mission .title2 p{
+        font-size: 18px;
+    }
+    .vision .title2 p{
+        font-size: 18px;
+    }
+    .team_container > h1{
+        font-size: 28px;
+    }
+    .team_container p{
+        font-size: 14.5px;
+    }
+
+    .sub_value{
+        height: 280px;
+    }
+    .sub_goal{
+        height: 260px;
+    }
+    .sub_goal p{
+        font-size: 13.5px;
+    }
+  }
+  @media screen and (max-width: 1020px) {
+    .mission .title2 p{
+        font-size: 17px;
+    }
+    .mission .deco{
+        left: 60px;
+        bottom: 20px;
+    }
+    .vision .deco{
+        right: 60px;
+        bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 1008px) {
+    .mission .title2 p{
+        font-size: 18px;
+    }
+    .vision .title2 p{
+        font-size: 18px;
+    }
+    .team_container > h1{
+        font-size: 25px;
+    }
+    .team_container p{
+        font-size: 13.2px;
+    }
+    .sub_team h1{
+        font-size: 25px;
+    }
+
+    .sub_value{
+        height: 280px;
+    }
+    .sub_goal{
+        height: 260px;
+    }
+    .sub_goal p{
+        font-size: 12px;
+    }
+    .sub_goal h1{
+        font-size: 23px;
+    }
+    .sub_value p{
+        font-size: 15px;
+    }
+    .mission .title2{
+        transform: translateY(0);
+    }
+    .vision .title2{
+        transform: translateY(13vh);
+    }
+    .mission .title2  h1{
+        font-size: 40px;
+    }
+    .vision .title2  h1{
+        font-size: 40px;
+    }
+    .team{
+        flex-direction: column;
+    }
+  }
+
+/* Khi media nhỏ cỡ mobile */
+@media screen and (max-width: 800px) {
+    .title h1{
+        font-size: 170px;
+    }
+    .title p{
+        font-size: 20px;
+        margin-bottom: 25px;
     }
 }
