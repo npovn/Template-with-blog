@@ -6,6 +6,9 @@
     <title>Latibule of the Heart</title>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     </script>
     <script> 
         $(function(){
@@ -14,6 +17,7 @@
         });
     </script> 
     <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="aboutusmedia.css">
 </head>
 <body>
     <div id = "header"></div>
@@ -131,10 +135,31 @@
             </div>
         </div>
     </div>  
+
+    <div class="counter-up">
+        <div class="content">
+          <div class="box">
+            <img src="Assets/Images/Icon1.png" alt="Icon1" class="icon">
+            <div class="counter" data-target="1600">0</div>
+            <div class="text">Lượt tương tác mỗi bài viết</div>
+          </div>
+          <div class="box">
+            <img src="Assets/Images/Icon2.png" alt="Icon2" class="icon">
+            <div class="counter" data-target="1100">0</div>
+            <div class="text">Lượt theo dõi trên Fanpage</div>
+          </div>
+          <div class="box">
+            <img src="Assets/Images/Icon3.png" alt="Icon3" class="icon">
+            <div class="counter" data-target="1000">0</div>
+            <div class="text">Lượt tiếp cận tháng 1/2022</div>
+          </div>
+    </div>
+
     <script src="main.js"></script>
 
     <script type="text/javascript">
         window.addEventListener('scroll', reveal);
+        window.addEventListener('scroll', counterReveal);
     
         function reveal(){
           var reveals = document.querySelectorAll('.reveal');
@@ -153,6 +178,48 @@
             }
           }
         }
+
+        function counterReveal(){
+            const counters = document.querySelectorAll('.counter');
+            const counterups = document.querySelectorAll('.counter-up');
+            const speed = 200; // The lower the slower
+            
+            for(var i = 0; i < counterups.length; i++){
+        
+            var windowheight = window.innerHeight;
+            var revealtop = counterups[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+
+                    // Lower inc to slow and higher to slow
+                    const inc = target / speed;
+
+                    // console.log(inc);
+                    // console.log(count);
+
+                    // Check if target is reached
+                    if (count < target) {
+                        // Add inc to count and output in counter
+                        counter.innerText = count + inc;
+                        // Call function every ms
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+            }
+        }
+}
+
+        
     </script>
 </body>
 </html>
