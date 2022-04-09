@@ -179,6 +179,8 @@
 .mission{
     height: 70vh;
     position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .mission::after{
@@ -297,7 +299,7 @@
 }
 
 .vision .title2{
-    position: ab;
+    position: relative;
     transform: translateY(23vh);
     margin-right: 3vw;
     margin-left: 45vw;
@@ -960,7 +962,7 @@
     } 
 
     .sub_team p{
-        margin-left: 10px;
+        margin-left: 5vw;
         font-size: 20px;
         transform: translateX(0);
         opacity: 1;
@@ -978,12 +980,14 @@
 /* Khi media nhỏ cỡ mobile */
 @media screen and (max-width: 800px) {
     .title h1{
-        font-size: 170px;
+        font-size: 140px;
     }
     .title p{
         font-size: 20px;
         margin-bottom: 25px;
     }
+
+    /* Goal */
     .goal{
         height: 200vh;
     }
@@ -991,15 +995,15 @@
         flex-direction: column;
     }
     .sub_goal{
-        width: 40vw;
-        margin-bottom: 20px;
+        width: 55vw;
+        margin-bottom: 30px;
     }
     .sub_goal p{
-        width: 38vw;
-        font-size: 2vw;
+        width: 52vw;
+        font-size: 2.85vw;
     }
     .sub_goal h1{
-        width: 38vw;
+        width: 52vw;
         font-size: 28px;
     }
     .goal > h1{
@@ -1007,5 +1011,251 @@
     }
     .goal a button{
         width: 45vw;
+        font-size: 5vw;
+        border: 1.9px rgb(52, 51, 51) solid;
+    }
+    .goal a button:hover{
+        border: transparent;
+        color: rgb(15, 15, 15);
+    }
+
+    /* Value */
+    .value{
+        height: 200vh;
+    }
+    .value_container{
+        flex-direction: column;
+    }
+    .sub_value{
+        width: 55vw;
+        margin-bottom: 30px;
+    }
+    .sub_value p{
+        width: 52vw;
+        font-size: 2.85vw;
+    }
+    .sub_value h1{
+        width: 52vw;
+        font-size: 28px;
+    }
+    .value > h1{
+        font-size: 40px;
+    }
+    .value a button{
+        width: 45vw;
+        font-size: 5vw;
+        border: 1.9px rgb(52, 51, 51) solid;
+    }
+    .value a button:hover{
+        border: transparent;
+        color: rgb(15, 15, 15);
+    }
+    .value > h1::after{
+        content: "";
+        align-items: center;
+        top: 90px;
+        height: 3.8px;
+        border-radius: 2px;
+        width: 150px;
+        background-color: rgb(255, 96, 96);
+        position: absolute;
+        transform: translateX(-230px);
+    }
+
+    /* Mission */
+    .mission{
+        height: 35vh;
+    }
+    .mission .img_container{
+        margin-left: 50vw;
+    }
+    .mission img{
+        width: 40vw;
+        margin-right: 15px;
+    }
+    .mission .deco{
+        width: 36vw;
+        height: 35vw;
+        left: 39px;
+        bottom: 4px;
+    }
+    .mission .title2{
+        width: 40vw;
+    }
+    .mission .title2 h1{
+        font-size: 40px;
+    }
+    .mission .title2 p{
+        font-size: 15px;
+    }
+
+    /* Vision */
+    .vision{
+        height: 47vh;
+    }
+    .vision .img_container{
+        margin-left: 5vw;
+    }
+    .vision img{
+        width: 40vw;
+        margin-left: 15px;
+    }
+    .vision .deco{
+        width: 36vw;
+        height: 35vw;
+        right: 38px;
+        bottom: 10px;
+    }
+    .vision .title2{
+        width: 40vw;
+        margin-left: 50vw;
+    }
+    .vision .title2 h1{
+        font-size: 40px;
+    }
+    .vision .title2 p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    /* Mission */
+    .mission{
+        height: 28vh;
+    }
+    .mission .title2 h1{
+        font-size: 35px;
+    }
+    .mission .title2 p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .mission .deco{
+        width: 36vw;
+        height: 35vw;
+        left: 30px;
+        bottom: 4px;
+    }
+
+    /* Vision */
+    .vision{
+        height: 42vh;
+    }
+    .vision .title2 h1{
+        font-size: 35px;
+    }
+    .vision .title2 p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .vision .deco{
+        width: 36vw;
+        height: 35vw;
+        right: 28px;
+        bottom: 8px;
+    }
+
+    /* Goal */
+    .sub_goal p{
+        width: 52vw;
+        font-size: 3.6vw;
+    }
+    .sub_goal h1{
+        width: 52vw;
+        font-size: 28px;
+    }
+
+    /* Value */
+    .sub_value p{
+        width: 52vw;
+        font-size: 3.6vw;
+    }
+    .sub_value h1{
+        width: 52vw;
+        font-size: 28px;
+    }
+
+    /* Team */
+    .team{
+        height: 75vh;
+    }
+    .team_container > h1{
+        font-size: 7vw;
+    }
+    .sub_team h1{
+        font-size: 5vw;
+    }
+    .sub_team p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 436px){
+    .title h1{
+        font-size: 100px;
+    }
+    .title p{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    /* Mission */
+    .mission .title2 h1{
+        font-size: 30px;
+    }
+    .mission .title2 p{
+        font-size: 10px;
+    }
+    .mission .deco{
+        width: 36vw;
+        height: 35vw;
+        left: 30px;
+        bottom: 4px;
+    }
+
+    /* Vision */
+    .vision .title2 h1{
+        font-size: 30px;
+    }
+    .vision .title2 p{
+        font-size: 10px;
+    }
+    .vision .deco{
+        width: 36vw;
+        height: 35vw;
+        right: 28px;
+        bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 352px){
+     /* Mission */
+     .mission .title2 h1{
+        font-size: 26px;
+    }
+    .mission .title2 p{
+        font-size: 9px;
+    }
+    .mission .deco{
+        width: 36vw;
+        height: 35vw;
+        left: 20px;
+        bottom: 4px;
+    }
+
+    /* Vision */
+    .vision .title2{
+        transform: translateY(80px);
+    }
+    .vision .title2 h1{
+        font-size: 26px;
+    }
+    .vision .title2 p{
+        font-size: 9px;
+    }
+    .vision .deco{
+        width: 36vw;
+        height: 35vw;
+        right: 21px;
+        bottom: 8px;
     }
 }
