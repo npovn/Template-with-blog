@@ -78,6 +78,7 @@ body{
 }
 .Logo{
     height: 13vh;
+    z-index: 5;
 }
 .navbar ul.PC_navbar li{
     list-style: none;
@@ -171,7 +172,7 @@ ul.PC_navbar{
     background-color: transparent;
 
     /* Chỉnh dựa trên height của .Logo với 1/2 height của burger_menu */
-    transform: translateX(0) translateY(120px);
+    transform: translateX(0) translateY(130px);
     transition: all ease-in-out .5s;
 }
 
@@ -192,7 +193,7 @@ ul.PC_navbar{
 
 .burger_menu.open{
     background-color: rgb(41, 40, 40);
-    transform: translateY(110px);
+    transform: translateY(120px);
     transition: all 0.5s ease-in-out;
 }
 

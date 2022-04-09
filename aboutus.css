@@ -989,7 +989,7 @@
 
     /* Goal */
     .goal{
-        height: 200vh;
+        height: 225vh;
     }
     .goal_container{
         flex-direction: column;
@@ -1021,7 +1021,7 @@
 
     /* Value */
     .value{
-        height: 200vh;
+        height: 225vh;
     }
     .value_container{
         flex-direction: column;
@@ -1127,7 +1127,7 @@
         font-size: 35px;
     }
     .mission .title2 p{
-        font-size: 12px;
+        font-size: 11.5px;
         margin-top: 10px;
     }
     .mission .deco{
@@ -1145,7 +1145,7 @@
         font-size: 35px;
     }
     .vision .title2 p{
-        font-size: 12px;
+        font-size: 11.5px;
         margin-top: 10px;
     }
     .vision .deco{
@@ -1164,6 +1164,12 @@
         width: 52vw;
         font-size: 28px;
     }
+    .goal > h1{
+        font-size: 40px;
+    }
+    .goal > h1::after{
+        transform: translateX(-160px);
+    }
 
     /* Value */
     .value{
@@ -1176,6 +1182,9 @@
     .sub_value h1{
         width: 52vw;
         font-size: 28px;
+    }
+    .value > h1{
+        font-size: 40px;
     }
 
     /* Team */
@@ -1206,7 +1215,7 @@
         font-size: 30px;
     }
     .mission .title2 p{
-        font-size: 10px;
+        font-size: 9.5px;
     }
     .mission .deco{
         width: 36vw;
@@ -1220,7 +1229,7 @@
         font-size: 30px;
     }
     .vision .title2 p{
-        font-size: 10px;
+        font-size: 9.5px;
     }
     .vision .deco{
         width: 36vw;
@@ -1241,7 +1250,7 @@
         font-size: 26px;
     }
     .mission .title2 p{
-        font-size: 9px;
+        font-size: 8.5px;
     }
     .mission .deco{
         width: 36vw;
@@ -1258,7 +1267,7 @@
         font-size: 26px;
     }
     .vision .title2 p{
-        font-size: 9px;
+        font-size: 8.5px;
     }
     .vision .deco{
         width: 36vw;
@@ -1273,11 +1282,23 @@
     }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 353px){
     .goal{
         height: 225vh;
     }
     .team > img{
         margin-left: 50px;
+    }
+    .goal > h1{
+        font-size: 38px;
+    }
+    .goal > h1::after{
+        transform: translateX(-153px);
+    }
+    .value > h1{
+        font-size: 35px;
+    }
+    .value > h1::after{
+        transform: translateX(-205px);
     }
 }
