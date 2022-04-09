@@ -1166,6 +1166,9 @@
     }
 
     /* Value */
+    .value{
+        height: 225vh;
+    }
     .sub_value p{
         width: 52vw;
         font-size: 3.6vw;
@@ -1177,7 +1180,7 @@
 
     /* Team */
     .team{
-        height: 75vh;
+        height: 80vh;
     }
     .team_container > h1{
         font-size: 7vw;
@@ -1225,6 +1228,11 @@
         right: 28px;
         bottom: 8px;
     }
+
+    /* Team */
+    .team > img{
+        margin-left: 50px;
+    }
 }
 
 @media screen and (max-width: 352px){
@@ -1257,5 +1265,19 @@
         height: 35vw;
         right: 21px;
         bottom: 8px;
+    }
+
+    /* Team */
+    .sub_team p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .goal{
+        height: 225vh;
+    }
+    .team > img{
+        margin-left: 50px;
     }
 }

@@ -76,7 +76,7 @@ body{
 .navbar a .Logo{
     transform: translateX(60px);
 }
-.logo{
+.Logo{
     height: 13vh;
 }
 .navbar ul.PC_navbar li{
@@ -275,5 +275,11 @@ ul.PC_navbar{
         background-color: rgb(41, 40, 40);
         height: 1vh;
         width: 100vw;
+    }
+    .black a .Logo{
+        transform: translateX(0px);
+    }
+    .navbar a .Logo{
+        transform: translateX(0px);
     }
   }
