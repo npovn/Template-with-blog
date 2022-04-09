@@ -757,7 +757,7 @@
 }
 
 .sub_team:hover h1::after{
-    width: 4vw;
+    width: 3.4vw;
 }
 
 .sub_team p{
@@ -879,6 +879,11 @@
         font-size: 13.5px;
     }
   }
+  @media screen and (max-width: 1022px) {
+    .team_container > h1{
+        font-size: 26px;
+    }
+  }
   @media screen and (max-width: 1020px) {
     .mission .title2 p{
         font-size: 17px;
@@ -905,10 +910,6 @@
     .team_container p{
         font-size: 13.2px;
     }
-    .sub_team h1{
-        font-size: 25px;
-    }
-
     .sub_value{
         height: 280px;
     }
@@ -937,7 +938,40 @@
         font-size: 40px;
     }
     .team{
+        margin-left: 10vw;
         flex-direction: column;
+        height: 95vh;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .team_container > h1{
+        margin-top: 50px;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .team_container > h1::after{
+        display: none;
+    }
+    .sub_team h1::after{
+        width: 4.1vw;
+    }    
+    .sub_team:hover h1::after{
+        width: 4.1vw;
+    } 
+
+    .sub_team p{
+        margin-left: 10px;
+        font-size: 20px;
+        transform: translateX(0);
+        opacity: 1;
+        z-index: -1;
+    }
+    .sub_team h1{
+        font-size: 30px;
+    }
+
+    .team > img{
+        height: 25vw;
     }
   }
 
@@ -949,5 +983,29 @@
     .title p{
         font-size: 20px;
         margin-bottom: 25px;
+    }
+    .goal{
+        height: 200vh;
+    }
+    .goal_container{
+        flex-direction: column;
+    }
+    .sub_goal{
+        width: 40vw;
+        margin-bottom: 20px;
+    }
+    .sub_goal p{
+        width: 38vw;
+        font-size: 2vw;
+    }
+    .sub_goal h1{
+        width: 38vw;
+        font-size: 28px;
+    }
+    .goal > h1{
+        font-size: 50px;
+    }
+    .goal a button{
+        width: 45vw;
     }
 }
