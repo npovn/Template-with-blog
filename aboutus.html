@@ -54,22 +54,22 @@
         <div class="goal reveal">
             <h1>Mục tiêu</h1>
             <div class="goal_container">
-                <div class="sub_goal">
+                <div class="sub_goal reveal2">
                     <img src="Assets/Images/MoneyIcon.png" alt="Money">
                     <h1>Tài chính</h1>
                     <p>Các khoản tài chính từ nhà tài trợ và quỹ quyên góp được sử dụng hợp lý và hiệu quả để hỗ trợ dụng cụ và tư liệu cho các dự án của tổ chức.</p>
                 </div>
-                <div class="sub_goal">
+                <div class="sub_goal reveal2">
                     <img src="Assets/Images/WorkshopIcon.png" alt="Workshop">
                     <h1>Sản phẩm</h1>
                     <p>LOTH tổ chức các dự án giáo dục như workshop - webinar; các chương trình dạy học tình nguyện và các bài viết về kĩ năng sống.</p>
                 </div>
-                <div class="sub_goal">
+                <div class="sub_goal reveal2">
                     <img src="Assets/Images/TrustIcon.png" alt="Trust">
                     <h1>Con người</h1>
                     <p>Môi trường làm việc cởi mở và tôn trọng lẫn nhau; có cho bản thân những kiến thức, kinh nghiệm và trải nghiệm thú vị.</p>
                 </div>
-                <div class="sub_goal">
+                <div class="sub_goal reveal2">
                     <img src="Assets/Images/StudentIcon.png" alt="Student">
                     <h1>Thị trường</h1>
                     <p>Không chỉ học sinh trong một độ tuổi nhất định mà tất cả học sinh ở từng cấp sẽ có các khóa học phù hợp và các kĩ năng sống rất thiết thực.</p>
@@ -83,20 +83,20 @@
         <div class="value reveal">
             <h1>Giá trị cốt lõi</h1>
             <div class="value_container">
-                <div class="sub_value">
+                <div class="sub_value reveal2">
                     <h1>Giá trị thực tiễn</h1>
                     <p>Các bạn học sinh sẽ được khám phá cách vận dụng những kiến thức vào cuộc sống một các hiệu quả và phù hợp.</p>
                     <div class="value_background"></div>
                 </div>
-                <div class="sub_value">
+                <div class="sub_value reveal2">
                     <h1>Giá trị bền vững</h1>
                     <p>Các kiến thức và kĩ năng nhận được có giá trị sử dụng lâu dài.</p>
                 </div>
-                <div class="sub_value">
+                <div class="sub_value reveal2">
                     <h1>Giá trị tích cực</h1>
                     <p>Mang đến một góc nhìn cởi mở hơn, tích cực hơn về việc học thông quá các hoạt động truyền cảm hứng và tìm ra giá trị thật sự của việc học.</p>
                 </div>
-                <div class="sub_value">
+                <div class="sub_value reveal2">
                     <h1>Giá trị kết nối</h1>
                     <p>LOTH là chiếc cầu nối  các thế hệ đầy kinh nghiệm đi trước và những bạn học sinh có khao khát được học hỏi và đầy sức sáng tạo.</p>
                 </div>
@@ -175,6 +175,22 @@
             }
             else{
               reveals[i].classList.remove('active');
+            }
+          }
+
+          var reveal2s = document.querySelectorAll('.reveal2');
+    
+          for(var i = 0; i < reveal2s.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var reveal2top = reveal2s[i].getBoundingClientRect().top;
+            var reveal2point = 150;
+    
+            if(reveal2top < windowheight - reveal2point){
+              reveal2s[i].classList.add('active');
+            }
+            else{
+              reveal2s[i].classList.remove('active');
             }
           }
         }

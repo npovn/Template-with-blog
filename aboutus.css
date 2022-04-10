@@ -88,13 +88,14 @@
     z-index: -1;
 }
 
-.parallax{
-    position: absolute;
+.parallax1{
+    position: fixed;
+    float: right;
     margin: 0;
-    left: 0;
+    right: 0;
     top: 0;
-    width: 100vw;
     height: 100vh;
+    width: auto;
     object-fit: cover;
     z-index: -2;
 }
@@ -420,11 +421,6 @@
     /* transition: 0.25s all ease-in-out; */
 }
 
-.sub_goal:hover h1{
-    color: rgb(255, 228, 228);
-    transform: translateY(0);
-}
-
 .sub_goal {
     /* Width của p */
     width: 20vw;
@@ -448,6 +444,11 @@
 
 .sub_goal:hover img{
     width: 90px;
+}
+
+.sub_goal:hover h1{
+    color: rgb(255, 228, 228);
+    transform: translateY(0);
 }
 
 .sub_goal:hover p{
@@ -592,11 +593,6 @@
     transition: 0.4s all ease-in-out;
 }
 
-.sub_value:hover h1{
-    color: rgb(250, 197, 197);
-    transform: translateY(50px);
-}
-
 .sub_value {
     /* Width của p */
     width: 20vw;
@@ -626,6 +622,11 @@
     display: inline-block;
     color: white;
     opacity: 1;
+    transform: translateY(50px);
+}
+
+.sub_value:hover h1{
+    color: rgb(250, 197, 197);
     transform: translateY(50px);
 }
 
@@ -797,6 +798,18 @@
         font-size: 30px;
         margin-bottom: 17px;
     }
+
+    .parallax1{
+        position: absolute;
+        margin: 0;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -2;
+    }
+
     .mission .title2 h1{
         font-size: 50px;
     }
@@ -1064,7 +1077,7 @@
 
     /* Mission */
     .mission{
-        height: 35vh;
+        height: 35vw;
     }
     .mission .img_container{
         margin-left: 50vw;
@@ -1091,7 +1104,7 @@
 
     /* Vision */
     .vision{
-        height: 47vh;
+        height: 50vw;
     }
     .vision .img_container{
         margin-left: 5vw;
@@ -1115,6 +1128,48 @@
     }
     .vision .title2 p{
         font-size: 15px;
+    }
+
+    /* Reveal2 */
+    .goal .reveal2.active{
+        background-color: rgb(41, 40, 40);
+        transform: translateY(-10px);
+    }
+    
+    .goal .reveal2.active img{
+        width: 90px;
+    }
+    
+    .goal .reveal2.active h1{
+        color: rgb(255, 228, 228);
+        transform: translateY(0);
+    }
+    
+    .goal .reveal2.active p{
+        display: block;
+        color: white;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .value .reveal2.active{
+        transform: translateY(-10px);
+    }
+    
+    .value .reveal2.active img{
+        width: 90px;
+    }
+    
+    .value .reveal2.active p{
+        display: inline-block;
+        color: white;
+        opacity: 1;
+        transform: translateY(50px);
+    }
+    
+    .value .reveal2.active h1{
+        color: rgb(250, 197, 197);
+        transform: translateY(50px);
     }
 }
 

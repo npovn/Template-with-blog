@@ -80,12 +80,13 @@
 }
 
 .parallax{
-    position: absolute;
+    position: fixed;
+    float: right;
     margin: 0;
-    left: 0;
+    right: 0;
     top: 0;
-    width: 100vw;
     height: 100vh;
+    width: auto;
     object-fit: cover;
     z-index: -2;
 }
@@ -173,7 +174,7 @@ b{
     width: 190px;
     height: 50px;
     border-radius: 25px;
-    margin: 0 30px;
+    margin: 0 15px;
     padding: 0;
     border: 3px solid rgb(255, 96, 96);
     background: transparent;
@@ -182,6 +183,7 @@ b{
     position: relative;
     font-family: Iciel;
     text-transform: uppercase;
+    margin-bottom: 20px;
 
     animation: Button_Transition 1s ease-out;
 }
@@ -221,23 +223,42 @@ b{
         display: flex;
         justify-content: left;
     }
+    .parallax{
+        position: absolute;
+        margin: 0;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -2;
+    }
   }
 /* Chỉnh cỡ navbar cho phù hợp  */
   @media screen and (max-width: 1080px) {
     .title h1{
-        font-size: 60px;
+        font-size: 50px;
+    }
+    .title p{
+        font-size: 35px;
+    }
+    .parallax{
+        right: -220px;
     }
   }
 
 /* Khi media nhỏ cỡ mobile */
   @media screen and (max-width: 800px) {
     .title h1{
-        font-size: 48px;
+        font-size: 40px;
         margin-bottom: 25px;
     }
     .title p{
-        font-size: 10px;
+        font-size: 25px;
         margin-bottom: 25px;
+    }
+    .title b{
+        font-size: 42px;
     }
     .BtnContainer{
         display: flex;
@@ -247,6 +268,24 @@ b{
     .Logo{
         width: 95px;
         height: auto;
+    }
+  }
+  @media screen and (max-width: 550px){
+    .title h1{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .title p{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .title b{
+        font-size: 32px;
+    }
+    .title div a button{
+        width: 150px;
+        font-size: 20px;
+        margin-left: 1px;
     }
   }
 
