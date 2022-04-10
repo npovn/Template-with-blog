@@ -1000,7 +1000,7 @@
     }
     .sub_goal p{
         width: 52vw;
-        font-size: 2.85vw;
+        font-size: 2.3vw;
     }
     .sub_goal h1{
         width: 52vw;
@@ -1036,7 +1036,7 @@
     }
     .sub_value h1{
         width: 52vw;
-        font-size: 28px;
+        font-size: 32px;
     }
     .value > h1{
         font-size: 40px;
@@ -1118,7 +1118,7 @@
     }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 555px){
     /* Mission */
     .mission{
         height: 28vh;
@@ -1156,14 +1156,19 @@
     }
 
     /* Goal */
+    .sub_goal{
+        width: 95vw;
+        
+    }
     .sub_goal p{
-        width: 52vw;
+        width: 80vw;
         font-size: 3.6vw;
     }
     .sub_goal h1{
         width: 52vw;
         font-size: 28px;
     }
+    .sub_goal img{}
     .goal > h1{
         font-size: 40px;
     }
@@ -1175,8 +1180,11 @@
     .value{
         height: 225vh;
     }
+    .sub_value{
+        width: 95vw;
+    }
     .sub_value p{
-        width: 52vw;
+        width: 80vw;
         font-size: 3.6vw;
     }
     .sub_value h1{
