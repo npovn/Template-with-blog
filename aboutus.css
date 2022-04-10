@@ -70,7 +70,7 @@
 
 .home{
     width: 100vw; 
-    height: 90vh;
+    height: 100vh;
     transform: translateZ(0);
     overflow: hidden;
     position: relative;
@@ -1121,38 +1121,112 @@
 @media screen and (max-width: 555px){
     /* Mission */
     .mission{
-        height: 28vh;
+        height: 110vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
     }
-    .mission .title2 h1{
-        font-size: 35px;
-    }
-    .mission .title2 p{
-        font-size: 11.5px;
-        margin-top: 10px;
+    .mission img{
+        width: 85vw;
+        position: relative;
     }
     .mission .deco{
-        width: 36vw;
-        height: 35vw;
-        left: 30px;
-        bottom: 4px;
+        content: "";
+        align-items: center;
+        width: 85vw;
+        height: 70vw;
+        left: -3vw;
+        bottom: 6vw;
+        position: absolute;
+    }
+    .mission .img_container{
+        position: absolute;
+        margin-left: 8vw;
+    }
+    
+    .mission .title2{
+        position: absolute;
+        transform: translateY(75vw);
+        margin-left: 5vw;
+        margin-right: 3vw;
+        text-align: right;
+        padding: 10px;
+        width: 85vw;
+    }
+    .mission .title2 h1{
+        font-size: 9vw;
+        text-align: left;
+    }
+    .mission .title2 h1::after{
+        content: "";
+        align-items: center;
+        left: 10px;
+        bottom: 20px;
+        height: 3.3px;
+        border-radius: 2px;
+        width: 100px;
+        background-color: rgb(255, 96, 96);
+        position: absolute;
+    }
+    .mission .title2 p{
+        text-align: left;
+        font-size: 15px;
+        margin-top: 20px;
     }
 
     /* Vision */
     .vision{
-        height: 42vh;
+        height: 110vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
     }
-    .vision .title2 h1{
-        font-size: 35px;
-    }
-    .vision .title2 p{
-        font-size: 11.5px;
-        margin-top: 10px;
+    .vision img{
+        width: 85vw;
+        position: relative;
     }
     .vision .deco{
-        width: 36vw;
-        height: 35vw;
-        right: 28px;
-        bottom: 8px;
+        content: "";
+        align-items: center;
+        width: 85vw;
+        height: 70vw;
+        left: 0.5vw;
+        bottom: 7vw;
+        position: absolute;
+    }
+    .vision .img_container{
+        position: absolute;
+        margin-left: 4vw;
+    }
+    
+    .vision .title2{
+        position: absolute;
+        transform: translateY(75vw);
+        margin-left: 5vw;
+        margin-right: 3vw;
+        text-align: right;
+        padding: 10px;
+        width: 85vw;
+    }
+    .vision .title2 h1{
+        font-size: 9vw;
+        text-align: left;
+    }
+    .vision .title2 h1::after{
+        content: "";
+        align-items: center;
+        left: 10px;
+        bottom: 20px;
+        height: 3.3px;
+        border-radius: 2px;
+        width: 100px;
+        background-color: rgb(255, 96, 96);
+        position: absolute;
+    }
+    .vision .title2 p{
+        text-align: left;
+        font-size: 15px;
+        margin-top: 20px;
     }
 
     /* Goal */
@@ -1168,7 +1242,6 @@
         width: 52vw;
         font-size: 28px;
     }
-    .sub_goal img{}
     .goal > h1{
         font-size: 40px;
     }
@@ -1218,33 +1291,6 @@
         font-size: 15px;
         margin-bottom: 25px;
     }
-    /* Mission */
-    .mission .title2 h1{
-        font-size: 30px;
-    }
-    .mission .title2 p{
-        font-size: 9.5px;
-    }
-    .mission .deco{
-        width: 36vw;
-        height: 35vw;
-        left: 30px;
-        bottom: 4px;
-    }
-
-    /* Vision */
-    .vision .title2 h1{
-        font-size: 30px;
-    }
-    .vision .title2 p{
-        font-size: 9.5px;
-    }
-    .vision .deco{
-        width: 36vw;
-        height: 35vw;
-        right: 28px;
-        bottom: 8px;
-    }
 
     /* Team */
     .team > img{
@@ -1253,37 +1299,6 @@
 }
 
 @media screen and (max-width: 352px){
-     /* Mission */
-     .mission .title2 h1{
-        font-size: 26px;
-    }
-    .mission .title2 p{
-        font-size: 8.5px;
-    }
-    .mission .deco{
-        width: 36vw;
-        height: 35vw;
-        left: 20px;
-        bottom: 4px;
-    }
-
-    /* Vision */
-    .vision .title2{
-        transform: translateY(80px);
-    }
-    .vision .title2 h1{
-        font-size: 26px;
-    }
-    .vision .title2 p{
-        font-size: 8.5px;
-    }
-    .vision .deco{
-        width: 36vw;
-        height: 35vw;
-        right: 21px;
-        bottom: 8px;
-    }
-
     /* Team */
     .sub_team p{
         font-size: 12px;
