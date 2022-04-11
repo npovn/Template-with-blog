@@ -176,14 +176,14 @@ ul.PC_navbar{
     transition: all ease-in-out .5s;
 }
 
-.burger_menu ul.mobile_navbar li{
+.burger_menu ul.mobile_navbar a li{
     text-align: center;
     list-style: none;
     display: block;
     padding: 10px;
 }
 
-.burger_menu ul.mobile_navbar li a{
+.burger_menu ul.mobile_navbar a{
     font-family: Iciel;
     text-decoration: none;
     text-transform: uppercase;
@@ -197,12 +197,12 @@ ul.PC_navbar{
     transition: all 0.5s ease-in-out;
 }
 
-.burger_menu.open ul.mobile_navbar li a{
+.burger_menu.open ul.mobile_navbar a li{
     color: white;
     transition: all 0.15s ease-in-out;
 }
 
-.burger_menu.open ul.mobile_navbar li a:hover{
+.burger_menu.open ul.mobile_navbar a li:hover{
     color: rgb(164, 223, 250);
 }
 
