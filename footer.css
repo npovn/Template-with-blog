@@ -1,0 +1,64 @@
+/* CSS for footer */
+body{
+	line-height: 1.5;
+    font-family: 'Oswald', sans-serif;
+}
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	background-color: #d89dcb;
+    padding: 70px 0;
+    color: white;
+}
+.footer a{
+    color:white;
+    text-decoration:underline;
+}
+.footer-col{
+   width: 50%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-copyright{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
