@@ -21,7 +21,15 @@ $(function(){
 });
 </script> 
 <style>
-  *,
+  @font-face {
+    font-family: Oswald;
+    src: url(Assets/Fonts/Oswald.ttf);
+  }
+  @font-face {
+    font-family: Briko;
+    src: url(Assets/Fonts/Briko.ttf);
+  }
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -36,7 +44,6 @@ body{
 .timeline {
   position: relative;
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -65,7 +72,6 @@ body{
 
 .container.right {
   left: 50%;
-
 }
 
 .container::after {
@@ -106,7 +112,7 @@ body{
   display: inline-block;
   top: calc(50% - 13px);
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #006E51;
   text-transform: uppercase;
@@ -154,28 +160,50 @@ body{
   background: #F6D155;
   position: relative;
   border-radius: 0 500px 500px 0;
+  text-align: justify;
 }
 
 .container.right .content {
   padding: 30px 30px 30px 90px;
   border-radius: 500px 0 0 500px;
 }
+.container.left .content{
+  padding: 60px 80px 50px 15px;
+}
 
 .container .content h2 {
+  font-family: Briko;
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
   color: #006E51;
+  font-weight: 10;
 }
 
 .container .content p {
+  font-family: Oswald;
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: #3f3f3f;
+}
+
+@media (min-width: 767.98px) {
+  .container.left {
+  left: 0;
+  padding-left: 0;
+}
+
+.container.right {
+  left: 50%;
+  padding-right: 0;
+}
 }
 
 @media (max-width: 767.98px) {
+  .timeline{
+    max-width: 1140px;
+  }
   .timeline::after {
     left: 90px;
   }
@@ -222,16 +250,16 @@ body{
     border-radius: 500px 0 0 500px;
   }
   .container.container.left.big .content{
-    padding: 75px 20px 80px 90px;
+    padding: 95px 30px 120px 100px;
   }
 }
 
 .timeline .content p{
-  font-size: 15px;
+  font-size: 1.5vw;
 }
 
 .timeline .content h2{
-  font-size: 17px;
+  font-size: 3.5vw;
 }
 
 .title{
