@@ -529,6 +529,7 @@
 
 .value h1{
     color: rgb(73, 66, 66);
+    width: 90%;
 }
 
 .value p{
@@ -651,7 +652,7 @@
 /* Team */
 .team{
     margin-top: 100px;
-    height: 100%;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -849,6 +850,9 @@
     .sub_team h1{
         margin-right: 15px;
     }
+    .sub_value h1{
+        width: 90%;
+    }
   }
   @media screen and (max-width: 1350px) {
     .mission .title2 h1{
@@ -941,7 +945,7 @@
     .team{
         margin-left: 10vw;
         flex-direction: column;
-        height: 95vh;
+        height: 90vw;
         justify-content: left;
         align-items: flex-start;
     }
@@ -1034,7 +1038,7 @@
         font-size: 2.85vw;
     }
     .sub_value h1{
-        width: 52vw;
+        width: 90vw;
         font-size: 32px;
     }
     .value > h1{
@@ -1150,19 +1154,19 @@
         display: inline-block;
         color: white;
         opacity: 1;
-        transform: translateY(50px);
+        transform: translateY(90px);
     }
     
     .value .reveal2.active h1{
         color: rgb(250, 197, 197);
-        transform: translateY(50px);
+        transform: translateY(90px);
     }
 }
 
 @media screen and (max-width: 555px){
     /* Mission */
     .mission{
-        height: 110vw;
+        height: 130vw;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -1217,7 +1221,7 @@
 
     /* Vision */
     .vision{
-        height: 110vw;
+        height: 130vw;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -1302,7 +1306,7 @@
         font-size: 3.6vw;
     }
     .sub_value h1{
-        width: 52vw;
+        width: 90vw;
         font-size: 28px;
     }
     .value > h1{
@@ -1311,7 +1315,7 @@
 
     /* Team */
     .team{
-        height: 80vh;
+        height: 110vw;
     }
     .team_container > h1{
         font-size: 7vw;
@@ -1343,6 +1347,11 @@
     /* Team */
     .sub_team p{
         font-size: 12px;
+    }
+    
+    /* Mission */
+    .mission{
+        height: 120vw;
     }
 }
 
@@ -1401,6 +1410,7 @@
   .counter-up .content .box{
     border: 2px dashed rgba(255,255,255,0.6);
     width: calc(25% - 30px);
+    height: 250px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -1430,6 +1440,7 @@
     color: #ccc;
     font-family: Iciel;
     font-size: 25px;
+    text-align: center;
   }
   @media screen and (max-width: 1036px) {
     .counter-up{

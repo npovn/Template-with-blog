@@ -198,24 +198,34 @@ body{
 
 @media (min-width: 767.98px) {
   .container.left {
-  left: 0;
-  padding-left: 0;
+    left: 0;
+    padding-left: 0;
+  }
+
+  .container.right {
+    left: 50%;
+    padding-right: 0;
+  }
+  .container .date{
+    font-size: 20px;
+  }
+  .container.left .date {
+  right: -98px;
 }
 
-.container.right {
-  left: 50%;
-  padding-right: 0;
+.container.right .date {
+  left: -114px;
 }
 }
 
 @media (max-width: 1000px){
   .timeline .content p{
-  font-size: 1.5vw;
-}
+    font-size: 1.5vw;
+  }
 
-.timeline .content h2{
-  font-size: 3.5vw;
-}
+  .timeline .content h2{
+    font-size: 3.5vw;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -252,6 +262,7 @@ body{
     font-family: 'Oswald', sans-serif;
     right: auto;
     left: 5px;
+    font-size: 15px;
   }
 
   .container.left .icon,
@@ -268,8 +279,16 @@ body{
     border-radius: 500px 0 0 500px;
   }
   .container.container.left.big .content{
-    padding: 95px 30px 120px 100px;
+    padding: 35px 30px 50px 100px;
   }
+
+  .timeline .content p{
+  font-size: 2.5vw;
+}
+
+.timeline .content h2{
+  font-size: 4.4vw;
+}
 }
 
 .title{
@@ -284,7 +303,7 @@ body{
 @media (max-width: 457px){
   .container.container.left.big .content,
   .container.container.right.big .content{
-    padding: 105px 20px 105px 90px;
+    padding: 75px 20px 65px 90px;
   }
 }
 </style>
@@ -296,7 +315,7 @@ body{
         Các hoạt động dự kiến năm 2022
     </div>
     <div class="timeline">
-        <div class="container left big">
+        <div class="container left">
           <div class="date">Tháng 3</div>
           <i class="icon fa fa-home"></i>
           <div class="content">
@@ -341,7 +360,7 @@ body{
             </p>
           </div>
         </div>
-        <div class="container left big">
+        <div class="container left">
           <div class="date">Tháng 9</div>
           <i class="icon fa fa-cog"></i>
           <div class="content">
