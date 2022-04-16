@@ -1,2 +1,2 @@
 # Latibule
-A website for Latibule of the heart project.
+A website for Latibule. Created by The itHelp Project 
