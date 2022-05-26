@@ -1,13 +1,8 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Template</title>
-    <style>
-        @font-face {
+<!-- Navbarforpost.html khác với navbar.html là để khắc phục sự khác nhau ở hyperlink-->
+<style>
+    @font-face {
     font-family: Iciel;
-    src: url(Assets/Fonts/Iciel.ttf);
+    src: url(../../../Assets/Fonts/Iciel.ttf);
 }
 
 *{
@@ -30,7 +25,7 @@ body{
 .navbar{
     position: absolute;
     width: 100vw;
-    height: 40px;
+    height: 120px;
     margin: auto;
     padding: 35px 0px;
     display: flex;
@@ -43,7 +38,7 @@ body{
 .black{
     background-color: rgb(41, 40, 40);
     width: 100vw;
-    height: 40px;
+    height: 120px;
 
     animation: Navbar_Transition 0.6s ease-in-out;
 }
@@ -188,11 +183,11 @@ ul.PC_navbar{
     0%{
         transform: translateY(40px);
         color: transparent;
-        height: 50px;
+        height: 140px;
     }
     100%{
         transform: translateY(0%);
-        height: 40px;
+        height: 120px;
     }
 }
 
@@ -219,7 +214,7 @@ ul.PC_navbar{
     }
   }
 /* Chỉnh cỡ  navbar cho phù hợp  */
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 1200px) {
     .navbar ul.PC_navbar li a {
         font-size: 15px;
       }
@@ -228,7 +223,7 @@ ul.PC_navbar{
     }
   }
 
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1060px) {
     .navbar ul.PC_navbar li a {
         font-size: 13px;
     }
@@ -246,11 +241,11 @@ ul.PC_navbar{
         0%{
             transform: translateY(40px);
             color: transparent;
-            height: 50px;
+            height: 120px;
         }
         100%{
             transform: translateY(0);
-            height: 1vh;
+            height: 100px;
         }
     }
     .navbar ul.PC_navbar li a, .navbar ul.PC_navbar li::after {
@@ -263,7 +258,7 @@ ul.PC_navbar{
     }
     .navbar{
         background-color: rgb(41, 40, 40);
-        height: 1vh;
+        height: 100px;
         width: 100vw;
     }
     .black a .Logo{
@@ -273,39 +268,51 @@ ul.PC_navbar{
         transform: translateX(0px);
     }
   }
-
-    </style>
-</head>
-<body>
-    <div class="header-container">
-        <div class="navbar">
-            <!-- Xài đỡ do chưa có logo trắng -->
-            <a href="index.html"><img src="Assets/Images/LogoTrans.png" alt="Logo" class="Logo"></a>
-            
-            <ul class="PC_navbar">
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="aboutus.html"> About us</a></li>
-                <li><a href="posts/index.html"> Blog</a></li>
-                <li><a href="events.html"> Events</a></li>
-                <li><a href="volunteer.html"> Volunteer</a></li>
-                <li><a href="funding.html"> Gây quỹ</a></li>
+  </style>
+  <script>
+    const btncontainer = document.querySelector(".burger_container");
+    const btnmenu = document.querySelector(".burger_menu");
+    let menuOpen = false;
+    btncontainer.addEventListener("click", function(){
+        if(!menuOpen){
+            btncontainer.classList.add("open");
+            btnmenu.classList.add("open");
+            menuOpen = true;
+        }
+        else{
+            btncontainer.classList.remove("open");
+            btnmenu.classList.remove("open");
+            menuOpen = false;
+        }
+    })
+  </script>
+  <div class="header-container">
+    <div class="navbar black">
+        <a href="../../../index.html"><img src="../../../Assets/Images/LogoTrans.png" alt="Logo" class="Logo"></a>
+        
+        <ul class="PC_navbar">
+            <li><a href="../../../../index.html"> Home</a></li>
+            <li><a href="../../../../aboutus.html"> About us</a></li>
+            <li><a href="../../../posts/index.html"> Blog</a></li>
+            <li><a href="../../../../events.html"> Events</a></li>
+            <li><a href="../../../../volunteer.html"> Volunteer</a></li>
+            <li><a href="../../../../funding.html"> Gây quỹ</a></li>
+        </ul>
+        <div class="burger_container">
+            <div class="burger"></div>
+        </div>
+        <div class="burger_menu">
+            <ul class="mobile_navbar">
+                <a href="../../../../index.html"><li>Home</li></a>
+                <a href="../../../../aboutus.html"><li>About us</li></a>
+                <li><a href="../../../posts/index.html"> Blog</a></li>
+                <a href="../../../../events.html"><li>Events</li></a>
+                <a href="../../../../volunteer.html"><li>Volunteer</li></a>
+                <a href="../../../../funding.html"><li>Gây quỹ</li></a>
             </ul>
-            <div class="burger_container">
-                <div class="burger"></div>
-            </div>
-            <div class="burger_menu">
-                <ul class="mobile_navbar">
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="aboutus.html"><li>About us</li></a>
-                    <li><a href="posts/index.html"> Blog</a></li>
-                    <a href="events.html"><li>Events</li></a>
-                    <a href="volunteer.html"><li>Volunteer</li></a>
-                    <a href="funding.html"><li>Gây quỹ</li></a>
-                </ul>
-            </div>
         </div>
     </div>
-
-    <script src="header.js"></script>
-</body>
-</html>
+  </div>
+  
+  
+  
