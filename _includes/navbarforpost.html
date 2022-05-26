@@ -138,12 +138,13 @@ ul.PC_navbar{
 }
 
 .burger_menu{
+    color: transparent;
     position: absolute;
     width: 100vw;
     background-color: transparent;
 
     /* Chỉnh dựa trên height của .Logo với 1/2 height của burger_menu */
-    transform: translateX(0) translateY(150px);
+    transform: translateX(-15px) translateY(220px);
     transition: all ease-in-out .5s;
 }
 
@@ -165,7 +166,7 @@ ul.PC_navbar{
 .burger_menu.open{
     display: block;
     background-color: rgb(41, 40, 40);
-    transform: translateY(130px);
+    transform: translateX(-15px) translateY(200px);
     transition: all 0.5s ease-in-out;
 }
 
@@ -269,23 +270,6 @@ ul.PC_navbar{
     }
   }
   </style>
-  <script>
-    const btncontainer = document.querySelector(".burger_container");
-    const btnmenu = document.querySelector(".burger_menu");
-    let menuOpen = false;
-    btncontainer.addEventListener("click", function(){
-        if(!menuOpen){
-            btncontainer.classList.add("open");
-            btnmenu.classList.add("open");
-            menuOpen = true;
-        }
-        else{
-            btncontainer.classList.remove("open");
-            btnmenu.classList.remove("open");
-            menuOpen = false;
-        }
-    })
-  </script>
   <div class="header-container">
     <div class="navbar black">
         <a href="../../../index.html"><img src="../../../Assets/Images/LogoTrans.png" alt="Logo" class="Logo"></a>
@@ -305,7 +289,7 @@ ul.PC_navbar{
             <ul class="mobile_navbar">
                 <a href="../../../../index.html"><li>Home</li></a>
                 <a href="../../../../aboutus.html"><li>About us</li></a>
-                <li><a href="../../../posts/index.html"> Blog</a></li>
+                <a><li href="../../../posts/index.html"> Blog</li></a>
                 <a href="../../../../events.html"><li>Events</li></a>
                 <a href="../../../../volunteer.html"><li>Volunteer</li></a>
                 <a href="../../../../funding.html"><li>Gây quỹ</li></a>
@@ -313,6 +297,23 @@ ul.PC_navbar{
         </div>
     </div>
   </div>
+  <script>
+    const btncontainer = document.querySelector(".burger_container");
+    const btnmenu = document.querySelector(".burger_menu");
+    let menuOpen = false;
+    btncontainer.addEventListener("click", function(){
+        if(!menuOpen){
+            btncontainer.classList.add("open");
+            btnmenu.classList.add("open");
+            menuOpen = true;
+        }
+        else{
+            btncontainer.classList.remove("open");
+            btnmenu.classList.remove("open");
+            menuOpen = false;
+        }
+    })
+  </script>
   
   
   
