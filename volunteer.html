@@ -293,6 +293,13 @@
     font-weight: bold;
     cursor: pointer;
     }
+
+    button:disabled,
+    button[disabled]{
+    border-bottom: 4px solid #7f7f7f;
+    background: #bababa; 
+    }
+
     #Submit{
     border-bottom: 4px solid #6dae39;
     background: #6ccb7b; 
@@ -303,6 +310,10 @@
     button:hover {
     background: #b64545;
     } 
+    button:disabled,
+    button[disabled]{
+    display: none;
+    }
     @media (min-width: 781px){
         .container{
             margin-bottom: 88vh;
@@ -515,11 +526,50 @@
     </script>
     <script>
         const resetBtn = document.getElementById("Reset");
+        const submitBtn = document.getElementById("Submit");
         const alerts = document.getElementsByClassName("alert");
         resetBtn.addEventListener('click', function() {
             for (const a of alerts){
                 a.parentNode.removeChild(a);
             }
+            submitBtn.disabled = false;
+});
+        submitBtn.addEventListener('click', function() {
+            setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 2000);
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 2500);
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 3000);
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 3500);
+            setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 4000);
+
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 5500);
+
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 6000);
+
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 10000);
+
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 8000);
+
+         setTimeout(() => { if (alerts.length>0){
+                 submitBtn.disabled = true;
+         } }, 12000);
 });
     </script>
 </body>
