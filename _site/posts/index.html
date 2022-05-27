@@ -117,7 +117,9 @@ ul.PC_navbar{
 .burger_container{
     height: 50px;
     width: 50px;
-    position: relative;
+    position: fixed;
+    top: 25px;
+    right: 0;
     display: inline-block;
     margin-right: 10px;
     display: flex;
@@ -267,6 +269,9 @@ ul.PC_navbar{
 
 /* Khi media nhỏ cỡ mobile */
   @media screen and (max-width: 800px) {
+    .navbar ul.PC_navbar{
+        display: none;
+    }
     @keyframes Navbar_Transition {
         0%{
             transform: translateY(40px);
