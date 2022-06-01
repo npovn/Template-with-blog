@@ -1,2 +1,2 @@
-# Latibule
-A website for Latibule. Created by The itHelp Project (by Dang Gia Chi ft. La Van Hoa)
+# Template-with-blog
+Template with blog for The itHelp Project. Created by The itHelp Project for The itHelp Project.
